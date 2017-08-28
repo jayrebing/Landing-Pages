@@ -1,0 +1,99 @@
+/* Font  */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* Base Styles  */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/* Intro Section Styles */ 
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(images/tom.jpg) no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+/* Content styles */
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Heading styles */
+.content h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+	text-shadow: 0px 0px 300px;
+	font-size: 500%;
+}
+
+.content h3 {
+	font-family: 'helvetica', sans-serif;
+	color: #F9F3F4;
+	text-shadow: 0px 0px 300px;
+	font-size: 200%;
+	margin-bottom: 100px;
+	font-weight: lighter;
+
+}
+
+.content span {
+	color: #0FCC02;
+}	
+
+/* Button styles */
+.btn {
+	border: solid #0FCC02 3px;
+	border-radius: 20px;
+	font-family: 'Oswald', sans-serif;
+	color: #0FCC02;
+	font-size: 200%;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn:hover {
+	color: #fff;
+	border: solid #fff 5px;
+}
+
+/* Paragraph styles */
+p {
+	font-size: 180%;
+	line-height: 210%;
+	text-align: justify;
+	margin: 3%;
+	font-family: sans-serif;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+	.content h1 {
+		font-size: 250%;
+	}
+	.btn {
+		font-size: 110%;
+		padding: 7px 15px;
+	}
+	p {
+		font-size: 100%;
+		line-height: 160%;
+	}
+}
